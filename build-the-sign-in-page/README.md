@@ -28,9 +28,9 @@ Add the following HTML boilerplate and form to `views/auth/sign-in.ejs`:
   <body>
     <h1>Sign in</h1>
     <form action="/auth/sign-in" method="POST">
-      <label for="username">Username:</label>
+      Username:
       <input type="text" name="username" id="username" />
-      <label for="password">Password:</label>
+      Password:
       <input type="password" name="password" id="password" />
       <button type="submit">Sign in</button>
     </form>

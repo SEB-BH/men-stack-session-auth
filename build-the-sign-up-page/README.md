@@ -29,12 +29,12 @@ This template will have a simple form, like so:
   <body>
     <h1>Create a new account!</h1>
     <form action="" method="">
-      <label for="username">Username:</label>
-      <input type="text" name="username" id="username" />
-      <label for="password">Password:</label>
-      <input type="password" name="password" id="password" />
-      <label for="confirmPassword">Confirm Password:</label>
-      <input type="password" name="confirmPassword" id="confirmPassword" />
+      Username:
+      <input type="text" name="username" />
+      Password:
+      <input type="password" name="password" />
+      Confirm Password:
+      <input type="password" name="confirmPassword" />
       <button type="submit">Sign up</button>
     </form>
   </body>
@@ -85,6 +85,6 @@ app.get('/auth/sign-up', authCtrl.showSignUpForm)
 
 ## Test the route
 
-To test the route, visit `localhost:3000/auth/sign-up` in your browser. The `server.js` file handles the `/auth` section of the URL, and the `sign-up` is handled by the controller function we just wrote!
+To test the route, visit `localhost:3000/auth/sign-up` in your browser.
 
 You should see the form rendered in the browser.

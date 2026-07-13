@@ -45,7 +45,7 @@ const authCtrl = require('./controllers/auth')
 Add the route above `app.listen()`:
 
 ```js
-app.get('/', authCtrl.home)
+app.get('/auth/home', authCtrl.home)
 ```
 
 The route path stays in `server.js`. The function that handles the request lives in `controllers/auth.js`.
@@ -63,3 +63,5 @@ You should see:
 ```plaintext
 Welcome to the app!
 ```
+
+Once we've tested, we don't need to keep this controller, since we already have a landing page.
