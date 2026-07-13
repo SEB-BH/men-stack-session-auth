@@ -30,18 +30,14 @@ cd men-auth-template
 In this directory create a `server.js` file:
 
 ```bash
-touch server.js
+touch server.js .gitignore
 ```
 
 Create a node project along with its `package.json` file by using this command:
 
 ```bash
-npm init
+npm init -y
 ```
-
-During initialization, you will be prompted to customize your project and the `package.json` file.
-
-Accept the defaults (by just hitting `Return`/`Enter` for each prompt without adding any values).
 
 Open the project's folder in VS Code:
 

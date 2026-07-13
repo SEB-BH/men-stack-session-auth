@@ -44,10 +44,7 @@ In `controllers/auth.js`:
 
 ```js
 const showSignInForm = (req, res) => {
-    res.render('auth/sign-in.ejs', {
-        errorMessage: null,
-        username: ''
-    })
+    res.render('auth/sign-in.ejs')
 }
 ```
 Export it:
