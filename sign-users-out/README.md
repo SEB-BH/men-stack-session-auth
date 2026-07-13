@@ -16,10 +16,10 @@ In `views/home.ejs`:
 ```html
 <% if (user) { %>
 <h1>Welcome to the app, <%= user.username %>!</h1>
-<p>
   <!-- new sign out link -->
-  <a href="/auth/sign-out">Sign out</a>
-</p>
+  <form action="/auth/sign-out?_method=DELETE" method="POST">
+    <button type="submit">Sign out</button>
+  </form>
 <% } else { %>
 <h1>Welcome to the app, guest.</h1>
 <p>
@@ -58,7 +58,7 @@ module.exports = {
 In `server.js`:
 
 ```js
-app.post('/auth/sign-out', authCtrl.signOut)
+app.delete('/auth/sign-out', authCtrl.signOut)
 ```
 
 ## Finish the controller function
