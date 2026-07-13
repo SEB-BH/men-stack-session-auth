@@ -177,13 +177,13 @@ router.post("/sign-in", async (req, res) => {
 });
 ```
 
-## Modify the landing page and `index` route
+## Modify the landing page and `home` route
 
 To test the functionality of user sign-in, we need to update our landing page to reflect the user's sign-in status. This is done by utilizing the `req.session` object, which is now attached to every request due to our `session` middleware.
 
 Here's how we'll do this:
 
-- In our landing page's route, we're going to send a `user` variable to our `index.ejs` template. This variable is assigned the value of `req.session.user`, a property we just set during the sign-in process.
+- In our landing page's route, we're going to send a `user` variable to our `home.ejs` template. This variable is assigned the value of `req.session.user`, a property we just set during the sign-in process.
 
 - If `user` is `undefined` (which happens `when req.session.user` is not set), it means the visitor isn't signed in. In this case, our template will treat them as a guest, showing options to sign up or sign in.
 
@@ -200,7 +200,7 @@ app.get("/", (req, res) => {
 });
 ```
 
-Then, we can add some logic to the `index.ejs` template, like so:
+Then, we can add some logic to the `home.ejs` template, like so:
 
 ```html
 <% if (user) { %>
@@ -220,7 +220,3 @@ You should now be able to test all of this functionality through the application
 Note, however, that any time you restart the server, the version of the session object being stored in the server's memory will be deleted, and it will be as though you never signed in! If you make any modifications that restart the server, you will have to sign in all over again.
 
 If you get annoyed enough by this during your development process, we have a solution to store the sessions in MongoDB, instead of the server's local memory, in the level up section of this module.
-
-<!-- [Starter Code](https://git.generalassemb.ly/modular-curriculum-all-courses/men-stack-session-auth-template/tree/sign-the-user-in-start)
-
-[Complete Code](https://git.generalassemb.ly/modular-curriculum-all-courses/men-stack-session-auth-template/tree/sign-the-user-in-complete) -->
