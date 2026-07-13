@@ -1,0 +1,123 @@
+import "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/pkl/template.pkl" as Template
+
+// Add microlessons here, in the order they should be delivered
+
+setup = new Template.Microlesson {
+  friendlyName = "Setup"
+  dirName = "setup"
+  type = "Content"
+  videoUrl = ""
+}
+
+concepts = new Template.Microlesson {
+  friendlyName = "Concepts"
+  dirName = "concepts"
+  type = "Content"
+  videoUrl = ""
+}
+
+buildAndRunServerjs = new Template.Microlesson {
+  friendlyName = "Build and Run <code class='filepath'>server.js</code>"
+  dirName = "build-and-run-serverjs"
+  type = "Content"
+  videoUrl = ""
+}
+
+buildALandingPage = new Template.Microlesson {
+  friendlyName = "Build a Landing Page"
+  dirName = "build-a-landing-page"
+  type = "Content"
+  videoUrl = ""
+}
+
+buildTheUserModel = new Template.Microlesson {
+  friendlyName = "Build the <code>User</code> Model"
+  dirName = "build-the-user-model"
+  type = "Content"
+  videoUrl = ""
+}
+
+controllers = new Template.Microlesson {
+  friendlyName = "Controllers"
+  dirName = "controllers"
+  type = "Content"
+  videoUrl = ""
+}
+
+buildTheSignUpPage = new Template.Microlesson {
+  friendlyName = "Build the Sign Up Page"
+  dirName = "build-the-sign-up-page"
+  type = "Content"
+  videoUrl = ""
+}
+
+createAUser = new Template.Microlesson {
+  friendlyName = "Create a User"
+  dirName = "create-a-user"
+  type = "Content"
+  videoUrl = ""
+}
+
+buildTheSignInPage = new Template.Microlesson {
+  friendlyName = "Build the Sign In Page"
+  dirName = "build-the-sign-in-page"
+  type = "Content"
+  videoUrl = ""
+}
+
+signUsersIn = new Template.Microlesson {
+  friendlyName = "Sign Users In"
+  dirName = "sign-users-in"
+  type = "Content"
+  videoUrl = ""
+}
+
+signUsersOut = new Template.Microlesson {
+  friendlyName = "Sign Users Out"
+  dirName = "sign-users-out"
+  type = "Content"
+  videoUrl = ""
+}
+
+protectingRoutes = new Template.Microlesson {
+  friendlyName = "Protecting Routes"
+  dirName = "protecting-routes"
+  type = "Content"
+  videoUrl = ""
+}
+
+recap = new Template.Microlesson {
+  friendlyName = "Recap"
+  dirName = "recap"
+  type = "Content"
+  videoUrl = ""
+}
+
+savingSessionsInMongodb = new Template.Microlesson {
+  friendlyName = "Saving Sessions in MongoDB"
+  dirName = "saving-sessions-in-mongodb"
+  type = "Content"
+  videoUrl = ""
+}
+
+signInOnSignUp = new Template.Microlesson {
+  friendlyName = "Sign In on Sign Up"
+  dirName = "sign-in-on-sign-up"
+  type = "Content"
+  videoUrl = ""
+}
+
+protectingRoutesWithMiddleware = new Template.Microlesson {
+  friendlyName = "Protecting Routes with Middleware"
+  dirName = "protecting-routes-with-middleware"
+  type = "Content"
+  videoUrl = ""
+}
+
+makeTheUserSessionAvailableToAllViews = new Template.Microlesson {
+  friendlyName = "Make the <code>User</code> Session Available to All Views"
+  dirName = "make-the-user-session-available-to-all-views"
+  type = "Content"
+  videoUrl = ""
+}
+
