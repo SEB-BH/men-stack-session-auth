@@ -11,20 +11,20 @@ Open your Terminal application and navigate to your `~/code/ga/lectures` directo
 cd `~/code/ga/lectures`
 ```
 
-Make a new repository on [GitHub](https://github.com/) named `men-stack-session-auth`.
+Make a new repository on [GitHub](https://github.com/) named `men-auth-template`.
 
 Clone a copy of your remote repo locally by using the `git clone` command:
 
 ```bash
-git clone https://github.com/<github-username>/men-stack-session-auth.git
+git clone https://github.com/<github-username>/men-auth-template.git
 ```
 
 > 🚨 Do not copy the above command. It will not work. Your GitHub username will replace `<github-username>` (including the < and >) in the URL above.
 
-Next, `cd` into your new cloned directory, `men-stack-session-auth`:
+Next, `cd` into your new cloned directory, `men-auth-template`:
 
 ```bash
-cd men-stack-session-auth
+cd men-auth-template
 ```
 
 In this directory create a `server.js` file:
